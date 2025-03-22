@@ -2,14 +2,14 @@ version: '3'
 
 services:
   docmost:
-    image: docmost/docmost:latest
+    image: link34500/rednote:latest
     depends_on:
       - db
       - redis
     environment:
       APP_URL: 'http://localhost:3000'
-      APP_SECRET: 'REPLACE_WITH_LONG_SECRET'
-      DATABASE_URL: 'postgresql://docmost:STRONG_DB_PASSWORD@db:5432/docmost?schema=public'
+      APP_SECRET: '4e2a57b90dfef835ec01a62dbf3ab5a4ec3f6a837040af1c4d1fe0eb6c110b6e'
+      DATABASE_URL: 'postgresql://docmost:ALImaNSadABo@db:5432/docmost?schema=public'
       REDIS_URL: 'redis://redis:6379'
     ports:
       - "3000:3000"
@@ -22,7 +22,7 @@ services:
     environment:
       POSTGRES_DB: docmost
       POSTGRES_USER: docmost
-      POSTGRES_PASSWORD: STRONG_DB_PASSWORD
+      POSTGRES_PASSWORD: ALImaNSadABo
     restart: unless-stopped
     volumes:
       - db_data:/var/lib/postgresql/data
