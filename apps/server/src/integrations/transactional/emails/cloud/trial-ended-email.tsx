@@ -14,10 +14,10 @@ export const TrialEndedEmail = ({ billingLink, workspaceName }: Props) => {
       <Section style={content}>
         <Text style={paragraph}>Hi there,</Text>
         <Text style={paragraph}>
-          Your Docmost 7-day free trial for {workspaceName} has come to an end.
+          Your Rednote 7-day free trial for {workspaceName} has come to an end.
         </Text>
         <Text style={paragraph}>
-          To continue using Docmost for your wiki and documentation, please
+          To continue using Rednote for your wiki and documentation, please
           upgrade to a premium plan.
         </Text>
       </Section>
